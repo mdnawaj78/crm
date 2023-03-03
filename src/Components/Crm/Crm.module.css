@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 20px 0px 20px;
+}
+
+.left input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.right .NewLead_button {
+    padding: 11px 20px;
+    font-size: 16px;
+    background-color: #421C5E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.linkb {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+        margin: 10px 10px;
+    }
+    .left {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .right {
+        display: block;
+        width: 100%;
+        /* margin: 5px 0px; */
+    }
+    .right select {
+        width: 100%;
+        margin: 5px 0px;
+    }
+    .NewLead_button {
+        width: 100%;
+    }
+}
+
+@media(max-width:600px) {
+    .right {
+        flex-direction: column !important;
+        display: block;
+        width: 100%;
+    }
+    .right select {
+        width: 100%;
+        margin: 10px 0px;
+    }
+    .right .NewLead_button {
+        width: 100%;
+    }
+}
+
+
+/* Table css start from here */
+
+.table_wrapper {
+    padding: 0px 20px 20px 20px;
+}
+
+.responsive_table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    width: 100%;
+}
+
+.responsive_table th,
+.responsive_table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.responsive_table th {
+    background-color: #f2f2f2;
+}
+
+tr {
+    background-color: #f2f2f2;
+}
+
+.responsive_table tr td {
+    padding: 17px;
+}
+
+
+/* css for Mobile */
+
+.cardsection {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px 5px;
+}
+
+.remarks {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 1050px) {
+    .cardsection {
+        display: none;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .table_wrapper {
+        display: none;
+    }
+    .cardsection {
+        margin: 10px;
+    }
+}
+
+@media(max-width:600px) {
+    .cardsection {
+        flex-direction: column !important;
+        display: block;
+        /* width: 100%; */
+    }
+    .card {
+        margin: 10px 0px;
+    }
+}

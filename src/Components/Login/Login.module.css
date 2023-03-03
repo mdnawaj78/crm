@@ -1,0 +1,48 @@
+.parent {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.login_container {
+    margin: auto;
+    max-width: 360px;
+    width: 360px;
+    padding: 20px 60px 30px 60px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+}
+
+.login_container h2 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #421C5E;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .login_container {
+        max-width: 100%;
+    }
+}
