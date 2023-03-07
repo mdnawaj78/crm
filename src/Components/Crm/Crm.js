@@ -115,8 +115,8 @@ const Crm = () => {
               Status
             </option>
             <option value="new">New</option>
-            <option value="contacted">Contacted</option>
-            <option value="not_contacted">Not Contactedr</option>
+            <option value="Connected">Contacted</option>
+            <option value="Not_Interested">Not Contactedr</option>
           </select>
           <button className={styles.NewLead_button}>
             <Link to="/newlead" className={styles.linkb}>
